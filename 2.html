@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let f = prompt('输入一个华氏温度：');
+        f = parseFloat(f);
+        if (!isNaN(f)) {
+            alert('摄氏温度：' + (f+32)/1.8);
+        } else {
+            alert('请输入华氏温度！');
+        }
+    </script>
+</body>
+
+</html>
