@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let res = prompt('输入一个整数：');
+        res = parseInt(res);
+        if (!isNaN(res)) {
+            res % 2 == 0 ? alert(res + '是偶数') : alert(res + '是奇数');
+        } else {
+            alert('请输入一个整数');
+        }
+    </script>
+</body>
+
+</html>
