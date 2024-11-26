@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        s = prompt('请输入成绩：');
+        s = Number(s);
+        console.log(s);
+        if (!isNaN(s)&&s>=0&&s<=100) {
+            if (s>=90) {
+                alert('A');
+            } else if (s>=80){
+                alert('B');
+            }else if (s>=70) {
+                alert('C');
+            }else if (s>=60) {
+                alert('D');
+            }else {
+                alert("D");
+            }
+        }
+    </script>
+</body>
+</html>
