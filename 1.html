@@ -10,11 +10,15 @@
 <body>
     <script>
         let res = prompt('输入一个整数：');
-        res = parseInt(res);
-        if (!isNaN(res)) {
-            res % 2 == 0 ? alert(res + '是偶数') : alert(res + '是奇数');
+        if (res=='') {
+            alert('不能为空！')
         } else {
-            alert('请输入一个整数');
+            res = Number(res);
+            if (!isNaN(res)) {
+                res % 2 == 0 ? alert(res + '是偶数') : alert(res + '是奇数');
+            } else {
+                alert('请输入一个整数');
+            }            
         }
     </script>
 </body>
