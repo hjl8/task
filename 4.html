@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt('输入三角形第一条边：'),
+            b = prompt('输入三角形第二条边：'),
+            c = prompt('输入三角形第三条边：');
+
+        a = Number(a);
+        b = Number(b);
+        c = Number(c);
+
+        if (isNaN(a) || isNaN(b) || isNaN(c)) {
+            alert('请输入纯数字！');
+        } else if ((a + b > c && a + c > b) || (a - b < c && a - c < b && b - c < a)) {
+            if ((a == b && a == c) || (a == c && b == c)) {
+                if (a == b && a == c && b == c) {
+                    alert('等边');
+                } else {
+                    alert('等腰');
+                }
+            } else {
+                alert('普通')
+            }
+        } else {
+            alert('无法构成三角形')
+        }
+    </script>
+</body>
+
+</html>
