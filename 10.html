@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [1, 2, 3, 4, 5, 6, 7], arr2 = [], k = 3, index = 0;
+
+        for (let i = 0; i < Math.ceil(arr1.length / k); i++) {
+            arr2[i] = [];
+        }
+
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr2[index].length >= k) {
+                index++;
+            }
+            arr2[index].push(arr1[i]);
+        }
+        console.log(arr2)
+    </script>
+</body>
+
+</html>
