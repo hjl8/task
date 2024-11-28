@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = '12321', flag = true;
+        for (let i = 0; i < Math.floor(str.length / 2); i++) {
+            let temp = str.indexOf(str[i]) + str.lastIndexOf(str[i]);
+            if (temp != str.length - 1) {
+                flag = !flag;
+                break;
+            }
+        }
+
+        if (flag) {
+            console.log(str + '是回文');
+        } else {
+            console.log(str + '不是回文');
+        }
+
+    </script>
+</body>
+
+</html>
