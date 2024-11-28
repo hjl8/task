@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [2, 55, 6, 8, 10, 65, 99], max = arr[0], min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            max = Math.max(max, arr[i]);
+            min = Math.min(min, arr[i]);
+        }
+        console.log(`最大值：${max}；最小值：${min}`)
+    </script>
+</body>
+
+</html>
